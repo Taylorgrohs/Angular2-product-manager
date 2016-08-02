@@ -2,10 +2,27 @@
 <html>
 
 <head>
+  <!-- This stores the URL the user was attempting to go to in sessionStorage,
+  and then redirects all 404 responses to the app’s index.html page -->
+  <!-- See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
+  <script>
+    sessionStorage.redirect = location.href;
+  </script>
+  <meta http-equiv="refresh" content="0;URL='https://USERNAME.github.io/PROJECT_NAME'"></meta>
+  <script>
+    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
     <base href="/">
     <title>Acme Product Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="app/app.component.css" rel="stylesheet" />
 
@@ -29,7 +46,7 @@
     <!-- 2. Configure SystemJS -->
     <script>
         System.config({
-        packages: {        
+        packages: {
           app: {
             format: 'register',
             defaultExtension: 'js'
