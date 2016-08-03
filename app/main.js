@@ -15,4 +15,7 @@ System.register(['angular2/platform/browser', './app.component'], function(expor
         }
     }
 });
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 //# sourceMappingURL=main.js.map
