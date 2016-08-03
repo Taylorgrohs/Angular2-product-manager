@@ -27,7 +27,8 @@
         "typescript": "^1.8.10",
         "typings": "^0.7.12",
         "gulp": "^3.9.1",
-        "bower-files": "^3.11.3"
+        "bower-files": "^3.11.3",
+        "express": "4.14.0"
     },
     "repository": {}
 }
