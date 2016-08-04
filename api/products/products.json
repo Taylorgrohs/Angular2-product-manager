@@ -9,7 +9,11 @@
         "starRating": 3.2,
         "imageUrl": "./app/assets/images/Armadillo.jpg",
         "noBoost": "N/A",
-        "boost": "N/A"
+        "boost": "N/A",
+        "length":0 ,
+        "width": 0,
+        "height": 0,
+        "surface": 0 
     },
     {
         "productId": 2,
@@ -21,7 +25,11 @@
         "starRating": 4,
         "imageUrl": "./app/assets/images/BackFire.jpg",
         "noBoost": 2.358313,
-        "boost": 2.0251
+        "boost": 2.0251,
+        "length":117.156 ,
+        "width": 84.67036,
+        "height": 31.39440,
+        "surface": 32511.8556 
     },
     {
         "productId": 3,
@@ -33,7 +41,11 @@
         "starRating": 5,
         "imageUrl": "./app/assets/images/Batmobile.png",
         "noBoost": 2.396144,
-        "boost": 2.099095
+        "boost": 2.099095,
+        "length":128.8198 ,
+        "width": 84.67036,
+        "height": 29.39440,
+        "surface": 34365.2680 
     },
     {
         "productId": 4,
@@ -45,7 +57,11 @@
         "starRating": 3.7,
         "imageUrl": "./app/assets/images/Breakout.jpg",
         "noBoost": 2.370229,
-        "boost": 2.073595
+        "boost": 2.073595,
+        "length":128.8198,
+        "width": 76.36520,
+        "height": 30.30000,
+        "surface": 32145.8594 
     },
     {
         "productId": 5,
@@ -57,7 +73,11 @@
         "starRating": 5,
         "imageUrl": "./app/assets/images/DeLorean.jpg",
         "noBoost": 2.331759,
-        "boost": 1.996535
+        "boost": 1.996535,
+        "length":123.9424,
+        "width": 83.27995,
+        "height": 29.80000,
+        "surface": 32994.2858 
     },
     {
         "productId": 6,
@@ -69,7 +89,11 @@
         "starRating": 2.7,
         "imageUrl": "./app/assets/images/Dominus.jpg",
         "noBoost": 2.370229,
-        "boost": 2.06937
+        "boost": 2.06937,
+        "length":127.9268,
+        "width": 83.27995,
+        "height": 31.30000,
+        "surface": 34529.0176 
     },
     {
         "productId": 7,
@@ -81,7 +105,11 @@
         "starRating": 1.7,
         "imageUrl": "./app/assets/images/Gizmo.jpg",
         "noBoost": 2.286085,
-        "boost": 1.98575
+        "boost": 1.98575,
+        "length":122.7370,
+        "width": 83.25725,
+        "height": 37.16797,
+        "surface": 35750.2664 
     },
     {
         "productId": 8,
@@ -93,7 +121,11 @@
         "starRating": 0.5,
         "imageUrl": "./app/assets/images/Grog.jpg",
         "noBoost": 2.355146,
-        "boost": 1.992065
+        "boost": 1.992065,
+        "length":119.4957,
+        "width": 81.87707,
+        "height": 36.15907,
+        "surface": 34440.4103
     },
     {
         "productId": 9,
@@ -105,7 +137,11 @@
         "starRating": 4.9,
         "imageUrl": "./app/assets/images/HogSticker.jpg",
         "noBoost": "N/A",
-        "boost": "N/A"
+        "boost": "N/A",
+        "length":0,
+        "width": 0,
+        "height": 0,
+        "surface": 0 
     },
     {
         "productId": 10,
@@ -117,7 +153,11 @@
         "starRating": 2.5,
         "imageUrl": "./app/assets/images/Hotshot.jpg",
         "noBoost": 2.30175,
-        "boost": 1.963085
+        "boost": 1.963085,
+        "length":123.9424,
+        "width": 77.76891,
+        "height": 31.80000,
+        "surface": 32106.5700 
     },
     {
         "productId": 11,
@@ -129,7 +169,11 @@
         "starRating": 3,
         "imageUrl": "./app/assets/images/Merc.jpg",
         "noBoost": 2.39175,
-        "boost": 1.982595
+        "boost": 1.982595,
+        "length": 119.9868,
+        "width": 77.97530,
+        "height": 40.26958,
+        "surface": 34655.7147 
     },
     {
         "productId": 12,
@@ -141,7 +185,11 @@
         "starRating": 6,
         "imageUrl": "./app/assets/images/Octane.jpg",
         "noBoost": 2.357915,
-        "boost": 2.003875
+        "boost": 2.003875,
+        "length": 118.0074,
+        "width": 84.19941,
+        "height": 36.15907,
+        "surface": 34495.5273 
     },
     {
         "productId": 13,
@@ -153,7 +201,11 @@
         "starRating": 1,
         "imageUrl": "./app/assets/images/Paladin.jpg",
         "noBoost": 2.312455,
-        "boost": 1.965015
+        "boost": 1.965015,
+        "length": 123.2510,
+        "width": 76.88635,
+        "height": 29.80000,
+        "surface": 30880.8251 
     },
     {
         "productId": 14,
@@ -165,7 +217,11 @@
         "starRating": 4,
         "imageUrl": "./app/assets/images/Ripper.jpg",
         "noBoost": 2.368845,
-        "boost": 2.0017
+        "boost": 2.0017,
+        "length": 127.5825,
+        "width": 79.09612,
+        "height": 31.43038,
+        "surface": 33174.5366
     },
     {
         "productId": 15,
@@ -177,7 +233,11 @@
         "starRating": 2,
         "imageUrl": "./app/assets/images/Road_Hog.jpg",
         "noBoost": 2.339925,
-        "boost": 2.025714
+        "boost": 2.025714,
+        "length": 117.1566,
+        "width": 84.19941,
+        "height": 31.39440,
+        "surface": 32511.8556 
     },
     {
         "productId": 16,
@@ -189,7 +249,11 @@
         "starRating": 4.5,
         "imageUrl": "./app/assets/images/Scarab.jpg",
         "noBoost": 2.39508,
-        "boost": 2.005515
+        "boost": 2.005515,
+        "length": 114.9007,
+        "width": 82.74691,
+        "height": 37.66797,
+        "surface": 33905.3243 
     },
     {
         "productId": 17,
@@ -201,7 +265,11 @@
         "starRating": 5,
         "imageUrl": "./app/assets/images/Sweettooth.jpg",
         "noBoost": "N/A",
-        "boost": "N/A"
+        "boost": "N/A",
+        "length":0 ,
+        "width": 0,
+        "height": 0,
+        "surface": 0 
     },
     {
         "productId": 18,
@@ -213,7 +281,11 @@
         "starRating": 1.7,
         "imageUrl": "./app/assets/images/Venom.jpg",
         "noBoost": 2.353571,
-        "boost": 2.061695
+        "boost": 2.061695,
+        "length": 127.6995,
+        "width": 81.88242,
+        "height": 31.80000,
+        "surface": 33282.2864
     },
     {
         "productId": 19,
@@ -225,7 +297,11 @@
         "starRating": 3.7,
         "imageUrl": "./app/assets/images/Takumi.jpg",
         "noBoost": 2.33748,
-        "boost": 1.985875
+        "boost": 1.985875,
+        "length": 118.4945,
+        "width": 80.27252,
+        "height": 34.30000,
+        "surface": 32659.1218
     },
     {
         "productId": 20,
@@ -237,7 +313,11 @@
         "starRating": 1,
         "imageUrl": "./app/assets/images/X-Devil.jpg",
         "noBoost": 2.325606,
-        "boost": 2.012896
+        "boost": 2.012896,
+        "length": 119.0544,
+        "width": 85.74410,
+        "height": 34.76144,
+        "surface": 34654.6063 
     },
     {
         "productId": 21,
@@ -249,6 +329,10 @@
         "starRating": 2.5,
         "imageUrl": "./app/assets/images/Zippy.jpg",
         "noBoost": 2.359243,
-        "boost": 1.989765
+        "boost": 1.989765,
+        "length": 118.0074,
+        "width": 84.19941,
+        "height": 33.15907,
+        "surface": 33282.2864 
     }
 ]

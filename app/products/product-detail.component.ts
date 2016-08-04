@@ -10,7 +10,7 @@ import { StarComponent } from '../shared/star.component';
 })
 
 export class ProductDetailComponent implements OnInit {
-    pageTitle: string = "Product Detail";
+    pageTitle: string = "Car Detail";
     product: IProduct;
     errorMessage: string;
 

@@ -26,8 +26,9 @@
                                 {{showImage ? 'Hide' : 'Show'}} Image
                             </button>
                         </th>
-                        <th>Product</th>
+                        <th>Battle Car</th>
                         <th>Turn Speed</th>
+                        <th>Hit Box</th>
                         <th>Code</th>
                         <th>Available</th>
                         <th>Price</th>
@@ -44,7 +45,8 @@
                                 [style.margin.px]='imageMargin'>
                         </td>
                         <td><a [routerLink]="['ProductDetail', {id: product.productId}]">{{ product.productName }}</a></td>
-                        <td>{{product.noBoost + product.boost}} seconds</td>
+                        <td>{{product.noBoost + product.boost}}</td>
+                        <td>{{product.surface | number:'1.2-2'}}</td>
                         <td>{{ product.productCode | lowercase}}</td>
                         <td>{{ product.releaseDate }}</td>
                         <td>{{ product.price | currency:'USD':true:'1.2-2'}}</td>

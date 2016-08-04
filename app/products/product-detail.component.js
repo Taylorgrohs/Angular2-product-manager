@@ -32,7 +32,7 @@ System.register(['angular2/core', 'angular2/router', './product.service', '../sh
                     this._routeParams = _routeParams;
                     this._router = _router;
                     this._productService = _productService;
-                    this.pageTitle = "Product Detail";
+                    this.pageTitle = "Car Detail";
                 }
                 ProductDetailComponent.prototype.ngOnInit = function () {
                     if (!this.product) {
