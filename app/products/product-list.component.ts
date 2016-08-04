@@ -12,7 +12,7 @@ import { ProductService } from './product.service';
 })
 export class ProductListComponent implements OnInit{
     pageTitle: string = 'Product List';
-    imageWidth: number = 50;
+    imageWidth: number = 200;
     imageMargin: number = 2;
     showImage: boolean = false;
     listFilter: string;
@@ -31,7 +31,7 @@ export class ProductListComponent implements OnInit{
             .subscribe(
                 products => this.products = products,
                 error => this.errorMessage = <any>error);
-            
+
     }
     onRatingClicked(message: string): void {
         this.pageTitle = 'Product List: ' + message;

@@ -15,7 +15,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
                 <a class='navbar-brand'>{{pageTitle}}</a>
                 <ul class='nav navbar-nav'>
                     <li><a [routerLink]="['Welcome']">Home</a></li>
-                    <li><a [routerLink]="['Products']">Product List</a></li>
+                    <li><a [routerLink]="['Products']">Car List</a></li>
                 </ul>
             </div>
         </nav>
@@ -24,6 +24,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
         </div>
     </div>
     `,
+    styleUrls: ['app/app.component.css'],
     directives: [ROUTER_DIRECTIVES],
     providers: [ProductService, HTTP_PROVIDERS, ROUTER_PROVIDERS]
 })

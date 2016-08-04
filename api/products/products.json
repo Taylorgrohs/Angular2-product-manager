@@ -1,52 +1,212 @@
 [
     {
         "productId": 1,
-        "productName": "Leaf Rake",
+        "productName": "ArmaDillo",
         "productCode": "GDN-0011",
         "releaseDate": "March 19, 2016",
-        "description": "Leaf rake with 48-inch wooden handle.",
-        "price": 19.95,
+        "description": "Unlockable Battle-Car for Xbox One",
+        "price": 4.99,
         "starRating": 3.2,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+        "imageUrl": "./app/assets/images/Armadillo.jpg"
     },
     {
         "productId": 2,
-        "productName": "Garden Cart",
+        "productName": "BackFire",
         "productCode": "GDN-0023",
         "releaseDate": "March 18, 2016",
-        "description": "15 gallon capacity rolling garden cart",
-        "price": 32.99,
-        "starRating": 4.2,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+        "description": "With all these new cars, why not try something a little older",
+        "price": 1.99,
+        "starRating": 4,
+        "imageUrl": "./app/assets/images/BackFire.jpg"
+    },
+    {
+        "productId": 3,
+        "productName": "Batmobile",
+        "productCode": "BTM-0048",
+        "releaseDate": "May 21, 2016",
+        "description": "Batman's Car",
+        "price": 1000008.99,
+        "starRating": 5,
+        "imageUrl": "./app/assets/images/Batmobile.png"
+    },
+    {
+        "productId": 4,
+        "productName": "Breakout",
+        "productCode": "BKT-0022",
+        "releaseDate": "May 15, 2016",
+        "description": "Your standard Battle-Car",
+        "price": 2.55,
+        "starRating": 3.7,
+        "imageUrl": "./app/assets/images/Breakout.jpg"
     },
     {
         "productId": 5,
-        "productName": "Hammer",
-        "productCode": "TBX-0048",
-        "releaseDate": "May 21, 2016",
-        "description": "Curved claw steel hammer",
-        "price": 8.9,
-        "starRating": 4.8,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+        "productName": "DeLorean",
+        "productCode": "DLN-0042",
+        "releaseDate": "October 15, 2015",
+        "description": "Take a spin in this blast from the past Battle-Car",
+        "price": 13.37,
+        "starRating": 5,
+        "imageUrl": "./app/assets/images/DeLorean.jpg"
+    },
+    {
+        "productId": 6,
+        "productName": "Dominus",
+        "productCode": "DMS-003",
+        "releaseDate": "June 6, 2015",
+        "description": "Super Sonic Fury DLC Pack",
+        "price": 1.55,
+        "starRating": 2.7,
+        "imageUrl": "./app/assets/images/Dominus.jpg"
+    },
+    {
+        "productId": 7,
+        "productName": "Gizmo",
+        "productCode": "GZO-0024",
+        "releaseDate": "November 15, 2015",
+        "description": "Your standard Battle-Car",
+        "price": 2.15,
+        "starRating": 1.7,
+        "imageUrl": "./app/assets/images/Gizmo.jpg"
     },
     {
         "productId": 8,
-        "productName": "Saw",
-        "productCode": "TBX-0022",
-        "releaseDate": "May 15, 2016",
-        "description": "15-inch steel blade hand saw",
-        "price": 11.55,
-        "starRating": 3.7,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+        "productName": "Grog",
+        "productCode": "GG-0029",
+        "releaseDate": "May 15, 2011",
+        "description": "Your standard Battle-Car",
+        "price": 0.55,
+        "starRating": 0.5,
+        "imageUrl": "./app/assets/images/Grog.jpg"
+    },
+    {
+        "productId": 9,
+        "productName": "HogSticker",
+        "productCode": "HSR-0072",
+        "releaseDate": "April 1, 2016",
+        "description": "Secret Unlockable Battle-Car for Xbox One players",
+        "price": 5.55,
+        "starRating": 4.9,
+        "imageUrl": "./app/assets/images/HogSticker.jpg"
     },
     {
         "productId": 10,
-        "productName": "Video Game Controller",
-        "productCode": "GMG-0042",
-        "releaseDate": "October 15, 2015",
-        "description": "Standard two-button video game controller",
-        "price": 35.95,
-        "starRating": 4.6,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+        "productName": "Hotshot",
+        "productCode": "HST-0013",
+        "releaseDate": "March 15, 2016",
+        "description": "Your standard Battle-Car",
+        "price": 2.00,
+        "starRating": 2.5,
+        "imageUrl": "./app/assets/images/Hotshot.jpg"
+    },
+    {
+        "productId": 11,
+        "productName": "Merc",
+        "productCode": "MRC-0001",
+        "releaseDate": "May 15, 2015",
+        "description": "Your standard Battle-Car",
+        "price": 1.00,
+        "starRating": 3,
+        "imageUrl": "./app/assets/images/Merc.jpg"
+    },
+    {
+        "productId": 12,
+        "productName": "Octane",
+        "productCode": "OTN-0089",
+        "releaseDate": "Juen 1, 2015",
+        "description": "Your standard Battle-Car, maybe the best",
+        "price": 24.55,
+        "starRating": 6,
+        "imageUrl": "./app/assets/images/Octane.jpg"
+    },
+    {
+        "productId": 13,
+        "productName": "Paladin",
+        "productCode": "PLD-0232",
+        "releaseDate": "May 15, 2000",
+        "description": "Your standard Battle-Car, but who wants to drive this one...",
+        "price": 0.00,
+        "starRating": 1,
+        "imageUrl": "./app/assets/images/Paladin.jpg"
+    },
+    {
+        "productId": 14,
+        "productName": "Ripper",
+        "productCode": "RPR-0077",
+        "releaseDate": "October 31, 2015",
+        "description": "Chaos Run DLC, #GetRipped",
+        "price": 12.55,
+        "starRating": 4,
+        "imageUrl": "./app/assets/images/Ripper.jpg"
+    },
+    {
+        "productId": 15,
+        "productName": "Road Hog",
+        "productCode": "RDHG-1111",
+        "releaseDate": "July 4, 2015",
+        "description": "Your standard Battle-Car",
+        "price": 5.00,
+        "starRating": 2,
+        "imageUrl": "./app/assets/images/Road_Hog.jpg"
+    },
+    {
+        "productId": 16,
+        "productName": "Scarab",
+        "productCode": "SCB-0099",
+        "releaseDate": "September 11, 2015",
+        "description": "Reveng of the Battle-Cars DLC",
+        "price": 4.99,
+        "starRating": 4.5,
+        "imageUrl": "./app/assets/images/Scarab.jpg"
+    },
+    {
+        "productId": 17,
+        "productName": "Sweet Tooth",
+        "productCode": "SWT-0045",
+        "releaseDate": "November 1, 2016",
+        "description": "Secret Unlockable Battle-Car for PS4 players",
+        "price": 10.66,
+        "starRating": 5,
+        "imageUrl": "./app/assets/images/Sweettooth.jpg"
+    },
+    {
+        "productId": 18,
+        "productName": "Venom",
+        "productCode": "VNM-0123",
+        "releaseDate": "August 24, 2015",
+        "description": "Your standard Battle-Car",
+        "price": 1.55,
+        "starRating": 1.7,
+        "imageUrl": "./app/assets/images/Venom.jpg"
+    },
+    {
+        "productId": 19,
+        "productName": "Takumi",
+        "productCode": "TKMI-3456",
+        "releaseDate": "January 1, 2016",
+        "description": "Your standard Battle-Car",
+        "price": 2.50,
+        "starRating": 3.7,
+        "imageUrl": "./app/assets/images/Takumi.jpg"
+    },
+    {
+        "productId": 20,
+        "productName": "X Devil",
+        "productCode": "XDVL-666",
+        "releaseDate": "June 6, 2016",
+        "description": "Your standard Battle-Car",
+        "price": 1.99,
+        "starRating": 1,
+        "imageUrl": "./app/assets/images/X-Devil.jpg"
+    },
+    {
+        "productId": 21,
+        "productName": "Zippy",
+        "productCode": "ZPY-1234",
+        "releaseDate": "September 17, 2016",
+        "description": "Your standard Battle-Car",
+        "price": 3.66,
+        "starRating": 2.5,
+        "imageUrl": "./app/assets/images/Zippy.jpg"
     }
 ]
