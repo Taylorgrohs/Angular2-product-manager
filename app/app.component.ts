@@ -24,7 +24,6 @@ import { ProductDetailComponent } from './products/product-detail.component';
         </div>
     </div>
     `,
-    styleUrls: ['app/app.component.css'],
     directives: [ROUTER_DIRECTIVES],
     providers: [ProductService, HTTP_PROVIDERS, ROUTER_PROVIDERS]
 })
@@ -34,5 +33,5 @@ import { ProductDetailComponent } from './products/product-detail.component';
     { path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent }
 ])
 export class AppComponent {
-    pageTitle: string = 'Hoccer Product Management';
+    pageTitle: string = 'Hoccer Battle Cars';
 }
