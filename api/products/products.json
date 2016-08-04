@@ -7,7 +7,9 @@
         "description": "Unlockable Battle-Car for Xbox One",
         "price": 4.99,
         "starRating": 3.2,
-        "imageUrl": "./app/assets/images/Armadillo.jpg"
+        "imageUrl": "./app/assets/images/Armadillo.jpg",
+        "noBoost": "N/A",
+        "boost": "N/A"
     },
     {
         "productId": 2,
@@ -17,7 +19,9 @@
         "description": "With all these new cars, why not try something a little older",
         "price": 1.99,
         "starRating": 4,
-        "imageUrl": "./app/assets/images/BackFire.jpg"
+        "imageUrl": "./app/assets/images/BackFire.jpg",
+        "noBoost": 2.358313,
+        "boost": 2.0251
     },
     {
         "productId": 3,
@@ -27,7 +31,9 @@
         "description": "Batman's Car",
         "price": 1000008.99,
         "starRating": 5,
-        "imageUrl": "./app/assets/images/Batmobile.png"
+        "imageUrl": "./app/assets/images/Batmobile.png",
+        "noBoost": 2.396144,
+        "boost": 2.099095
     },
     {
         "productId": 4,
@@ -37,7 +43,9 @@
         "description": "Your standard Battle-Car",
         "price": 2.55,
         "starRating": 3.7,
-        "imageUrl": "./app/assets/images/Breakout.jpg"
+        "imageUrl": "./app/assets/images/Breakout.jpg",
+        "noBoost": 2.370229,
+        "boost": 2.073595
     },
     {
         "productId": 5,
@@ -47,7 +55,9 @@
         "description": "Take a spin in this blast from the past Battle-Car",
         "price": 13.37,
         "starRating": 5,
-        "imageUrl": "./app/assets/images/DeLorean.jpg"
+        "imageUrl": "./app/assets/images/DeLorean.jpg",
+        "noBoost": 2.331759,
+        "boost": 1.996535
     },
     {
         "productId": 6,
@@ -57,7 +67,9 @@
         "description": "Super Sonic Fury DLC Pack",
         "price": 1.55,
         "starRating": 2.7,
-        "imageUrl": "./app/assets/images/Dominus.jpg"
+        "imageUrl": "./app/assets/images/Dominus.jpg",
+        "noBoost": 2.370229,
+        "boost": 2.06937
     },
     {
         "productId": 7,
@@ -67,7 +79,9 @@
         "description": "Your standard Battle-Car",
         "price": 2.15,
         "starRating": 1.7,
-        "imageUrl": "./app/assets/images/Gizmo.jpg"
+        "imageUrl": "./app/assets/images/Gizmo.jpg",
+        "noBoost": 2.286085,
+        "boost": 1.98575
     },
     {
         "productId": 8,
@@ -77,7 +91,9 @@
         "description": "Your standard Battle-Car",
         "price": 0.55,
         "starRating": 0.5,
-        "imageUrl": "./app/assets/images/Grog.jpg"
+        "imageUrl": "./app/assets/images/Grog.jpg",
+        "noBoost": 2.355146,
+        "boost": 1.992065
     },
     {
         "productId": 9,
@@ -87,7 +103,9 @@
         "description": "Secret Unlockable Battle-Car for Xbox One players",
         "price": 5.55,
         "starRating": 4.9,
-        "imageUrl": "./app/assets/images/HogSticker.jpg"
+        "imageUrl": "./app/assets/images/HogSticker.jpg",
+        "noBoost": "N/A",
+        "boost": "N/A"
     },
     {
         "productId": 10,
@@ -97,7 +115,9 @@
         "description": "Your standard Battle-Car",
         "price": 2.00,
         "starRating": 2.5,
-        "imageUrl": "./app/assets/images/Hotshot.jpg"
+        "imageUrl": "./app/assets/images/Hotshot.jpg",
+        "noBoost": 2.30175,
+        "boost": 1.963085
     },
     {
         "productId": 11,
@@ -107,7 +127,9 @@
         "description": "Your standard Battle-Car",
         "price": 1.00,
         "starRating": 3,
-        "imageUrl": "./app/assets/images/Merc.jpg"
+        "imageUrl": "./app/assets/images/Merc.jpg",
+        "noBoost": 2.39175,
+        "boost": 1.982595
     },
     {
         "productId": 12,
@@ -117,7 +139,9 @@
         "description": "Your standard Battle-Car, maybe the best",
         "price": 24.55,
         "starRating": 6,
-        "imageUrl": "./app/assets/images/Octane.jpg"
+        "imageUrl": "./app/assets/images/Octane.jpg",
+        "noBoost": 2.357915,
+        "boost": 2.003875
     },
     {
         "productId": 13,
@@ -127,7 +151,9 @@
         "description": "Your standard Battle-Car, but who wants to drive this one...",
         "price": 0.00,
         "starRating": 1,
-        "imageUrl": "./app/assets/images/Paladin.jpg"
+        "imageUrl": "./app/assets/images/Paladin.jpg",
+        "noBoost": 2.312455,
+        "boost": 1.965015
     },
     {
         "productId": 14,
@@ -137,7 +163,9 @@
         "description": "Chaos Run DLC, #GetRipped",
         "price": 12.55,
         "starRating": 4,
-        "imageUrl": "./app/assets/images/Ripper.jpg"
+        "imageUrl": "./app/assets/images/Ripper.jpg",
+        "noBoost": 2.368845,
+        "boost": 2.0017
     },
     {
         "productId": 15,
@@ -147,7 +175,9 @@
         "description": "Your standard Battle-Car",
         "price": 5.00,
         "starRating": 2,
-        "imageUrl": "./app/assets/images/Road_Hog.jpg"
+        "imageUrl": "./app/assets/images/Road_Hog.jpg",
+        "noBoost": 2.339925,
+        "boost": 2.025714
     },
     {
         "productId": 16,
@@ -157,7 +187,9 @@
         "description": "Reveng of the Battle-Cars DLC",
         "price": 4.99,
         "starRating": 4.5,
-        "imageUrl": "./app/assets/images/Scarab.jpg"
+        "imageUrl": "./app/assets/images/Scarab.jpg",
+        "noBoost": 2.39508,
+        "boost": 2.005515
     },
     {
         "productId": 17,
@@ -167,7 +199,9 @@
         "description": "Secret Unlockable Battle-Car for PS4 players",
         "price": 10.66,
         "starRating": 5,
-        "imageUrl": "./app/assets/images/Sweettooth.jpg"
+        "imageUrl": "./app/assets/images/Sweettooth.jpg",
+        "noBoost": "N/A",
+        "boost": "N/A"
     },
     {
         "productId": 18,
@@ -177,7 +211,9 @@
         "description": "Your standard Battle-Car",
         "price": 1.55,
         "starRating": 1.7,
-        "imageUrl": "./app/assets/images/Venom.jpg"
+        "imageUrl": "./app/assets/images/Venom.jpg",
+        "noBoost": 2.353571,
+        "boost": 2.061695
     },
     {
         "productId": 19,
@@ -187,7 +223,9 @@
         "description": "Your standard Battle-Car",
         "price": 2.50,
         "starRating": 3.7,
-        "imageUrl": "./app/assets/images/Takumi.jpg"
+        "imageUrl": "./app/assets/images/Takumi.jpg",
+        "noBoost": 2.33748,
+        "boost": 1.985875
     },
     {
         "productId": 20,
@@ -197,7 +235,9 @@
         "description": "Your standard Battle-Car",
         "price": 1.99,
         "starRating": 1,
-        "imageUrl": "./app/assets/images/X-Devil.jpg"
+        "imageUrl": "./app/assets/images/X-Devil.jpg",
+        "noBoost": 2.325606,
+        "boost": 2.012896
     },
     {
         "productId": 21,
@@ -207,6 +247,8 @@
         "description": "Your standard Battle-Car",
         "price": 3.66,
         "starRating": 2.5,
-        "imageUrl": "./app/assets/images/Zippy.jpg"
+        "imageUrl": "./app/assets/images/Zippy.jpg",
+        "noBoost": 2.359243,
+        "boost": 1.989765
     }
 ]

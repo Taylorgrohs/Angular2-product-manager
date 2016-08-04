@@ -32,11 +32,15 @@
                         <ai-star [rating]='product.starRating'></ai-star>
                     </div>
                 </div>
+                <div class='row'>
+                    <div class='col-md-3'>Turn Speed:</div>
+                    <div class='col-md-6'>No Boost = {{product.noBoost}} seconds <p>Boost = {{product.boost}} seconds</p><p>Total = {{product.noBoost + product.boost}} seconds</div>
+                </div>
             </div>
 
             <div class='col-md-6'>
                 <img class='center-block img-responsive'
-                     [style.width.px]='500' 
+                     [style.width.px]='500'
                      [style.margin.px]='2'
                      [src]='product.imageUrl'
                      [title]='product.productName'>
