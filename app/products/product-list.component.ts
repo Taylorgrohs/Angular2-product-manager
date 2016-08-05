@@ -3,12 +3,13 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
 import { IProduct } from './product';
 import { ProductFilterPipe } from './product-filter.pipe';
 import { TurnSpeedFilterPipe } from './turnspeed-filter.pipe';
+import { SurfaceAreaFilterPipe } from './surfacearea-filter.pipe'
 import { StarComponent } from '../shared/star.component';
 import { ProductService } from './product.service';
 @Component({
     templateUrl: 'app/products/product-list.component.html',
     styleUrls: ['app/products/product-list.component.css'],
-    pipes: [ProductFilterPipe, TurnSpeedFilterPipe],
+    pipes: [ProductFilterPipe, TurnSpeedFilterPipe, SurfaceAreaFilterPipe],
     directives: [StarComponent, ROUTER_DIRECTIVES]
 })
 export class ProductListComponent implements OnInit{
@@ -18,6 +19,7 @@ export class ProductListComponent implements OnInit{
     showImage: boolean = true;
     listFilter: string;
     speedFilter: number = 0;
+    areaFilter: number = 0;
 
     errorMessage: string;
     products: IProduct[];
@@ -28,17 +30,24 @@ export class ProductListComponent implements OnInit{
 
     }
 
-    toggleFilter() {this.toggle = !this.toggle;
-                    console.log("hello");
-                };
-    turnFilter() { if(this.speedFilter === 0) {
+    surfaceFilter() {
+        if(this.areaFilter === 0) {
+        this.areaFilter = 1;
+        } else if(this.areaFilter === 1){
+            this.areaFilter = 2;
+        } else {
+            this.areaFilter = 1;
+        } 
+    }
+    turnFilter() { 
+        if(this.speedFilter === 0) {
         this.speedFilter = 1;
-    } else if(this.speedFilter === 1){
-        this.speedFilter = 2;
-    } else {
-        this.speedFilter = 1;
-    } 
-}    
+        } else if(this.speedFilter === 1){
+            this.speedFilter = 2;
+        } else {
+            this.speedFilter = 1;
+        } 
+    }    
 
 
     toggleImage(): void {

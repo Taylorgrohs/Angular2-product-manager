@@ -1,15 +1,15 @@
 import { PipeTransform, Pipe } from "angular2/core";
 import { IProduct } from './product';
 @Pipe({
-    name: "turnFilter"
+    name: "surfaceFilter"
 })
-export class TurnSpeedFilterPipe implements PipeTransform {
+export class SurfaceAreaFilterPipe implements PipeTransform {
     transform(array: IProduct[], args: number[]): IProduct[] {
         if(args[0] === 2) {
          array.sort((a,b) => {
-            if (a.total < b.total) {
+            if (a.surface < b.surface) {
                 return 1
-            } else if (a.total > b.total) {
+            } else if (a.surface > b.surface) {
                 return -1;
             } else {
                 return 0;
@@ -19,9 +19,9 @@ export class TurnSpeedFilterPipe implements PipeTransform {
         return array;
     } else if (args[0] === 1) {
         array.sort((a,b) => {
-            if (a.total < b.total) {
+            if (a.surface < b.surface) {
                 return -1
-            } else if (a.total > b.total) {
+            } else if (a.surface > b.surface) {
                 return 1;
             } else {
                 return 0;

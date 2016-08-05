@@ -28,7 +28,7 @@
                         </th>
                         <th>Battle Car</th>
                         <th class="speedFilter" (click)='turnFilter()'>Turn Speed</th>
-                        <th>Hit Box</th>
+                        <th class="surfaceFilter" (click)='surfaceFilter()'>Hit Box</th>
                         <th>Code</th>
                         <th>Available</th>
                         <th>Price</th>
@@ -36,7 +36,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor='#product of products | productFilter:listFilter | turnFilter:speedFilter'>
+                    <tr *ngFor='#product of products | productFilter:listFilter | turnFilter:speedFilter | surfaceFilter:areaFilter'>
                         <td>
                             <img *ngIf='showImage'
                                 [src]='product.imageUrl1'

@@ -11,23 +11,23 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var TurnSpeedFilterPipe;
+    var SurfaceAreaFilterPipe;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            TurnSpeedFilterPipe = (function () {
-                function TurnSpeedFilterPipe() {
+            SurfaceAreaFilterPipe = (function () {
+                function SurfaceAreaFilterPipe() {
                 }
-                TurnSpeedFilterPipe.prototype.transform = function (array, args) {
+                SurfaceAreaFilterPipe.prototype.transform = function (array, args) {
                     if (args[0] === 2) {
                         array.sort(function (a, b) {
-                            if (a.total < b.total) {
+                            if (a.surface < b.surface) {
                                 return 1;
                             }
-                            else if (a.total > b.total) {
+                            else if (a.surface > b.surface) {
                                 return -1;
                             }
                             else {
@@ -38,10 +38,10 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     }
                     else if (args[0] === 1) {
                         array.sort(function (a, b) {
-                            if (a.total < b.total) {
+                            if (a.surface < b.surface) {
                                 return -1;
                             }
-                            else if (a.total > b.total) {
+                            else if (a.surface > b.surface) {
                                 return 1;
                             }
                             else {
@@ -54,17 +54,17 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                         return array;
                     }
                 };
-                TurnSpeedFilterPipe = __decorate([
+                SurfaceAreaFilterPipe = __decorate([
                     core_1.Pipe({
-                        name: "turnFilter"
+                        name: "surfaceFilter"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], TurnSpeedFilterPipe);
-                return TurnSpeedFilterPipe;
+                ], SurfaceAreaFilterPipe);
+                return SurfaceAreaFilterPipe;
             }());
-            exports_1("TurnSpeedFilterPipe", TurnSpeedFilterPipe);
+            exports_1("SurfaceAreaFilterPipe", SurfaceAreaFilterPipe);
             ;
         }
     }
 });
-//# sourceMappingURL=turnspeed-filter.pipe.js.map
+//# sourceMappingURL=surfacearea-filter.pipe.js.map
