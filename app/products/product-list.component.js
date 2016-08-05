@@ -34,7 +34,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                 function ProductListComponent(_productService) {
                     this._productService = _productService;
                     this.pageTitle = 'Product List';
-                    this.imageWidth = 200;
+                    this.imageWidth = 150;
                     this.imageMargin = 2;
                     this.showImage = false;
                 }
