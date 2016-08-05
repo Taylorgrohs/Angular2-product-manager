@@ -1,7 +1,7 @@
 thead {
     color: #337AB7;
 }
-th.speedFilter:hover, th.surfaceFilter:hover {
+th.speedFilter:hover, th.surfaceFilter:hover, th.nameFilter:hover {
     font-size: 20px;
     cursor: pointer;
 }

@@ -26,7 +26,7 @@
                                 {{showImage ? 'Hide' : 'Show'}} Image
                             </button>
                         </th>
-                        <th>Battle Car</th>
+                        <th class="nameFilter" (click)='nameFilter()'>Battle Car</th>
                         <th class="speedFilter" (click)='turnFilter()'>Turn Speed</th>
                         <th class="surfaceFilter" (click)='surfaceFilter()'>Hit Box</th>
                         <th>Code</th>
@@ -36,7 +36,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor='#product of products | productFilter:listFilter | turnFilter:speedFilter | surfaceFilter:areaFilter'>
+                    <tr *ngFor='#product of products | productFilter:listFilter | turnFilter:speedFilter | surfaceFilter:areaFilter | nameFilter:abcFilter'>
                         <td>
                             <img *ngIf='showImage'
                                 [src]='product.imageUrl1'

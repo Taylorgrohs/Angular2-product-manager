@@ -3,13 +3,14 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
 import { IProduct } from './product';
 import { ProductFilterPipe } from './product-filter.pipe';
 import { TurnSpeedFilterPipe } from './turnspeed-filter.pipe';
-import { SurfaceAreaFilterPipe } from './surfacearea-filter.pipe'
+import { SurfaceAreaFilterPipe } from './surfacearea-filter.pipe';
+import { NameFilterPipe } from './name-filter.pipe';
 import { StarComponent } from '../shared/star.component';
 import { ProductService } from './product.service';
 @Component({
     templateUrl: 'app/products/product-list.component.html',
     styleUrls: ['app/products/product-list.component.css'],
-    pipes: [ProductFilterPipe, TurnSpeedFilterPipe, SurfaceAreaFilterPipe],
+    pipes: [ProductFilterPipe, TurnSpeedFilterPipe, SurfaceAreaFilterPipe, NameFilterPipe],
     directives: [StarComponent, ROUTER_DIRECTIVES]
 })
 export class ProductListComponent implements OnInit{
@@ -20,6 +21,7 @@ export class ProductListComponent implements OnInit{
     listFilter: string;
     speedFilter: number = 0;
     areaFilter: number = 0;
+    abcFilter: number = 1;
 
     errorMessage: string;
     products: IProduct[];
@@ -29,7 +31,13 @@ export class ProductListComponent implements OnInit{
     constructor(private _productService: ProductService){
 
     }
-
+    nameFilter() {
+         if(this.abcFilter === 1){
+            this.abcFilter = 2;
+        } else {
+            this.abcFilter = 1;
+        } 
+    }
     surfaceFilter() {
         if(this.areaFilter === 0) {
         this.areaFilter = 1;

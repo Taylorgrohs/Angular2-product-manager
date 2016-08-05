@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './product-filter.pipe', './turnspeed-filter.pipe', './surfacearea-filter.pipe', '../shared/star.component', './product.service'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './product-filter.pipe', './turnspeed-filter.pipe', './surfacearea-filter.pipe', './name-filter.pipe', '../shared/star.component', './product.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, product_filter_pipe_1, turnspeed_filter_pipe_1, surfacearea_filter_pipe_1, star_component_1, product_service_1;
+    var core_1, router_1, product_filter_pipe_1, turnspeed_filter_pipe_1, surfacearea_filter_pipe_1, name_filter_pipe_1, star_component_1, product_service_1;
     var ProductListComponent;
     return {
         setters:[
@@ -29,6 +29,9 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
             function (surfacearea_filter_pipe_1_1) {
                 surfacearea_filter_pipe_1 = surfacearea_filter_pipe_1_1;
             },
+            function (name_filter_pipe_1_1) {
+                name_filter_pipe_1 = name_filter_pipe_1_1;
+            },
             function (star_component_1_1) {
                 star_component_1 = star_component_1_1;
             },
@@ -45,8 +48,17 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     this.showImage = true;
                     this.speedFilter = 0;
                     this.areaFilter = 0;
+                    this.abcFilter = 1;
                     this.toggle = true; // start with true == shortDate
                 }
+                ProductListComponent.prototype.nameFilter = function () {
+                    if (this.abcFilter === 1) {
+                        this.abcFilter = 2;
+                    }
+                    else {
+                        this.abcFilter = 1;
+                    }
+                };
                 ProductListComponent.prototype.surfaceFilter = function () {
                     if (this.areaFilter === 0) {
                         this.areaFilter = 1;
@@ -84,7 +96,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     core_1.Component({
                         templateUrl: 'app/products/product-list.component.html',
                         styleUrls: ['app/products/product-list.component.css'],
-                        pipes: [product_filter_pipe_1.ProductFilterPipe, turnspeed_filter_pipe_1.TurnSpeedFilterPipe, surfacearea_filter_pipe_1.SurfaceAreaFilterPipe],
+                        pipes: [product_filter_pipe_1.ProductFilterPipe, turnspeed_filter_pipe_1.TurnSpeedFilterPipe, surfacearea_filter_pipe_1.SurfaceAreaFilterPipe, name_filter_pipe_1.NameFilterPipe],
                         directives: [star_component_1.StarComponent, router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [product_service_1.ProductService])
