@@ -7,6 +7,15 @@ export interface IProduct {
     description: string;
     starRating: number;
     imageUrl: string;
+    imageUrl1: string;
+    noBoost: number;
+    boost: number;
+    total: number;
+    length: number;
+    width: number;
+    height: number;
+    surface: number;
+
 }
 
 export class Product implements IProduct {
@@ -18,7 +27,15 @@ export class Product implements IProduct {
                 public price: number,
                 public description: string,
                 public starRating: number,
-                public imageUrl: string) {
+                public imageUrl: string,
+                public imageUrl1: string,
+                public noBoost: number,
+                public boost: number,
+                public total: number;
+                public length: number,
+                public width: number,
+                public height: number,
+                public surface: number) {
 
     }
 

@@ -6,7 +6,7 @@ System.register([], function(exports_1, context_1) {
         setters:[],
         execute: function() {
             Product = (function () {
-                function Product(productId, productName, productCode, releaseDate, price, description, starRating, imageUrl) {
+                function Product(productId, productName, productCode, releaseDate, price, description, starRating, imageUrl, imageUrl1, noBoost, boost, total, length, width, height, surface) {
                     this.productId = productId;
                     this.productName = productName;
                     this.productCode = productCode;
@@ -15,6 +15,14 @@ System.register([], function(exports_1, context_1) {
                     this.description = description;
                     this.starRating = starRating;
                     this.imageUrl = imageUrl;
+                    this.imageUrl1 = imageUrl1;
+                    this.noBoost = noBoost;
+                    this.boost = boost;
+                    this.total = total;
+                    this.length = length;
+                    this.width = width;
+                    this.height = height;
+                    this.surface = surface;
                 }
                 Product.prototype.calculateDiscount = function (percent) {
                     return this.price - (this.price * percent / 100);

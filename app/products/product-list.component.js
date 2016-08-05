@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '../shared/star.component', './product.service'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './product-filter.pipe', './turnspeed-filter.pipe', '../shared/star.component', './product.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, product_filter_pipe_1, star_component_1, product_service_1;
+    var core_1, router_1, product_filter_pipe_1, turnspeed_filter_pipe_1, star_component_1, product_service_1;
     var ProductListComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
             },
             function (product_filter_pipe_1_1) {
                 product_filter_pipe_1 = product_filter_pipe_1_1;
+            },
+            function (turnspeed_filter_pipe_1_1) {
+                turnspeed_filter_pipe_1 = turnspeed_filter_pipe_1_1;
             },
             function (star_component_1_1) {
                 star_component_1 = star_component_1_1;
@@ -37,7 +40,15 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     this.imageWidth = 150;
                     this.imageMargin = 2;
                     this.showImage = true;
+                    this.speedFilter = false;
+                    this.toggle = true; // start with true == shortDate
                 }
+                ProductListComponent.prototype.toggleFilter = function () {
+                    this.toggle = !this.toggle;
+                    console.log("hello");
+                };
+                ;
+                ProductListComponent.prototype.turnFilter = function () { this.speedFilter = !this.speedFilter; };
                 ProductListComponent.prototype.toggleImage = function () {
                     this.showImage = !this.showImage;
                 };
@@ -53,7 +64,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     core_1.Component({
                         templateUrl: 'app/products/product-list.component.html',
                         styleUrls: ['app/products/product-list.component.css'],
-                        pipes: [product_filter_pipe_1.ProductFilterPipe],
+                        pipes: [product_filter_pipe_1.ProductFilterPipe, turnspeed_filter_pipe_1.TurnSpeedFilterPipe],
                         directives: [star_component_1.StarComponent, router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [product_service_1.ProductService])

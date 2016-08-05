@@ -27,7 +27,7 @@
                             </button>
                         </th>
                         <th>Battle Car</th>
-                        <th>Turn Speed</th>
+                        <th class="filter" (click)='turnFilter()'>Turn Speed</th>
                         <th>Hit Box</th>
                         <th>Code</th>
                         <th>Available</th>
@@ -36,7 +36,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor='#product of products | productFilter:listFilter'>
+                    <tr *ngFor='#product of products | productFilter:listFilter | turnFilter:speedFilter'>
                         <td>
                             <img *ngIf='showImage'
                                 [src]='product.imageUrl1'
@@ -45,7 +45,7 @@
                                 [style.margin.px]='imageMargin'>
                         </td>
                         <td><a [routerLink]="['ProductDetail', {id: product.productId}]">{{ product.productName }}</a></td>
-                        <td>{{product.noBoost + product.boost}}</td>
+                        <td>{{product.total}}</td>
                         <td>{{product.surface | number:'1.2-2'}}</td>
                         <td>{{ product.productCode | lowercase}}</td>
                         <td>{{ product.releaseDate }}</td>
