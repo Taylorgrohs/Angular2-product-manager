@@ -40,7 +40,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     this.imageWidth = 150;
                     this.imageMargin = 2;
                     this.showImage = true;
-                    this.speedFilter = false;
+                    this.speedFilter = 0;
                     this.toggle = true; // start with true == shortDate
                 }
                 ProductListComponent.prototype.toggleFilter = function () {
@@ -48,7 +48,17 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     console.log("hello");
                 };
                 ;
-                ProductListComponent.prototype.turnFilter = function () { this.speedFilter = !this.speedFilter; };
+                ProductListComponent.prototype.turnFilter = function () {
+                    if (this.speedFilter === 0) {
+                        this.speedFilter = 1;
+                    }
+                    else if (this.speedFilter === 1) {
+                        this.speedFilter = 2;
+                    }
+                    else {
+                        this.speedFilter = 1;
+                    }
+                };
                 ProductListComponent.prototype.toggleImage = function () {
                     this.showImage = !this.showImage;
                 };

@@ -28,7 +28,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                 TurnSpeedFilterPipe.prototype.transform = function (array, args) {
                     var array1 = array;
                     var array2 = array;
-                    if (args[0] === false) {
+                    if (args[0] === 2) {
                         array.sort(function (a, b) {
                             if (a.total < b.total) {
                                 return 1;
@@ -42,8 +42,8 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                         });
                         return array;
                     }
-                    else {
-                        array2.sort(function (a, b) {
+                    else if (args[0] === 1) {
+                        array.sort(function (a, b) {
                             if (a.total < b.total) {
                                 return -1;
                             }
@@ -54,7 +54,10 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                                 return 0;
                             }
                         });
-                        return array2;
+                        return array;
+                    }
+                    else {
+                        return array;
                     }
                 };
                 TurnSpeedFilterPipe = __decorate([

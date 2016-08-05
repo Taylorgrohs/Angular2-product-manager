@@ -17,7 +17,8 @@ export class ProductListComponent implements OnInit{
     imageMargin: number = 2;
     showImage: boolean = true;
     listFilter: string;
-    speedFilter: boolean = false;
+    speedFilter: number = 0;
+
     errorMessage: string;
     products: IProduct[];
     toggle = true; // start with true == shortDate
@@ -30,7 +31,14 @@ export class ProductListComponent implements OnInit{
     toggleFilter() {this.toggle = !this.toggle;
                     console.log("hello");
                 };
-    turnFilter() { this.speedFilter = !this.speedFilter; }    
+    turnFilter() { if(this.speedFilter === 0) {
+        this.speedFilter = 1;
+    } else if(this.speedFilter === 1){
+        this.speedFilter = 2;
+    } else {
+        this.speedFilter = 1;
+    } 
+}    
 
 
     toggleImage(): void {

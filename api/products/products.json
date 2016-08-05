@@ -1,6 +1,24 @@
 [
     {
         "productId": 1,
+        "productName": "Aftershock",
+        "productCode": "AFK-0221",
+        "releaseDate": "December 19, 2016",
+        "description": "DLC",
+        "price": 4.99,
+        "starRating": 5,
+        "imageUrl": "./app/assets/images/Aftershock.jpg",
+        "imageUrl1": "./app/assets/images/Aftershock1.jpg",
+        "noBoost": 2.364627,
+        "boost": 2.075170,
+        "total": 4.439797,
+        "length":0 ,
+        "width": 0,
+        "height": 0,
+        "surface": 0 
+    },
+    {
+        "productId": 2,
         "productName": "ArmaDillo",
         "productCode": "GDN-0011",
         "releaseDate": "March 19, 2016",
@@ -18,7 +36,7 @@
         "surface": 0 
     },
     {
-        "productId": 2,
+        "productId": 3,
         "productName": "BackFire",
         "productCode": "GDN-0023",
         "releaseDate": "March 18, 2016",
@@ -36,7 +54,7 @@
         "surface": 32511.8556 
     },
     {
-        "productId": 3,
+        "productId": 4,
         "productName": "Batmobile",
         "productCode": "BTM-0048",
         "releaseDate": "May 21, 2016",
@@ -54,7 +72,7 @@
         "surface": 34365.2680 
     },
     {
-        "productId": 4,
+        "productId": 5,
         "productName": "Breakout",
         "productCode": "BKT-0022",
         "releaseDate": "May 15, 2016",
@@ -72,7 +90,7 @@
         "surface": 32145.8594 
     },
     {
-        "productId": 5,
+        "productId": 6,
         "productName": "DeLorean",
         "productCode": "DLN-0042",
         "releaseDate": "October 15, 2015",
@@ -90,7 +108,7 @@
         "surface": 32994.2858 
     },
     {
-        "productId": 6,
+        "productId": 7,
         "productName": "Dominus",
         "productCode": "DMS-003",
         "releaseDate": "June 6, 2015",
@@ -108,7 +126,25 @@
         "surface": 34529.0176 
     },
     {
-        "productId": 7,
+        "productId": 8,
+        "productName": "Esper",
+        "productCode": "ESP-1311",
+        "releaseDate": "March 19, 2016",
+        "description": "Unlockable Battle-Car DLC",
+        "price": 2.99,
+        "starRating": 4.2,
+        "imageUrl": "./app/assets/images/Esper.jpg",
+        "imageUrl1": "./app/assets/images/Esper1.jpg",
+        "noBoost": 2.337295,
+        "boost": 2.034185,
+        "total": 4.37148,
+        "length":0 ,
+        "width": 0,
+        "height": 0,
+        "surface": 0 
+    },
+    {
+        "productId": 9,
         "productName": "Gizmo",
         "productCode": "GZO-0024",
         "releaseDate": "November 15, 2015",
@@ -126,7 +162,7 @@
         "surface": 35750.2664 
     },
     {
-        "productId": 8,
+        "productId": 10,
         "productName": "Grog",
         "productCode": "GG-0029",
         "releaseDate": "May 15, 2011",
@@ -144,7 +180,7 @@
         "surface": 34440.4103
     },
     {
-        "productId": 9,
+        "productId": 11,
         "productName": "HogSticker",
         "productCode": "HSR-0072",
         "releaseDate": "April 1, 2016",
@@ -162,10 +198,10 @@
         "surface": 0 
     },
     {
-        "productId": 10,
+        "productId": 12,
         "productName": "Hotshot",
         "productCode": "HST-0013",
-        "releaseDate": "March 15, 2016",
+        "releaseDate": "May 1, 2016",
         "description": "Your standard Battle-Car",
         "price": 2.00,
         "starRating": 2.5,
@@ -180,7 +216,43 @@
         "surface": 32106.5700 
     },
     {
-        "productId": 11,
+        "productId": 13,
+        "productName": "Marauder",
+        "productCode": "MRDR-0011",
+        "releaseDate": "July 19, 2016",
+        "description": "Unlockable Battle-Car DLC",
+        "price": 1.99,
+        "starRating": 4.5,
+        "imageUrl": "./app/assets/images/Marauder.jpg",
+        "imageUrl1": "./app/assets/images/Marauder1.jpg",
+        "noBoost": 2.358302,
+        "boost": 2.015414,
+        "total": 4.373716,
+        "length":0 ,
+        "width": 0,
+        "height": 0,
+        "surface": 0 
+    },
+    {
+        "productId": 14,
+        "productName": "Masamune",
+        "productCode": "GDN-0011",
+        "releaseDate": "November 6, 2016",
+        "description": "Unlockable Battle-Car for Xbox One",
+        "price": 1.99,
+        "starRating": 5,
+        "imageUrl": "./app/assets/images/Masamune.jpg",
+        "imageUrl1": "./app/assets/images/Masamune1.jpg",
+        "noBoost": 2.406401,
+        "boost": 2.093303,
+        "total": 4.499704,
+        "length":0 ,
+        "width": 0,
+        "height": 0,
+        "surface": 0 
+    },
+    {
+        "productId": 15,
         "productName": "Merc",
         "productCode": "MRC-0001",
         "releaseDate": "May 15, 2015",
@@ -198,7 +270,7 @@
         "surface": 34655.7147 
     },
     {
-        "productId": 12,
+        "productId": 16,
         "productName": "Octane",
         "productCode": "OTN-0089",
         "releaseDate": "Juen 1, 2015",
@@ -216,7 +288,7 @@
         "surface": 34495.5273 
     },
     {
-        "productId": 13,
+        "productId": 17,
         "productName": "Paladin",
         "productCode": "PLD-0232",
         "releaseDate": "May 15, 2000",
@@ -234,7 +306,7 @@
         "surface": 30880.8251 
     },
     {
-        "productId": 14,
+        "productId": 18,
         "productName": "Ripper",
         "productCode": "RPR-0077",
         "releaseDate": "October 31, 2015",
@@ -252,7 +324,7 @@
         "surface": 33174.5366
     },
     {
-        "productId": 15,
+        "productId": 19,
         "productName": "Road Hog",
         "productCode": "RDHG-1111",
         "releaseDate": "July 4, 2015",
@@ -270,7 +342,7 @@
         "surface": 32511.8556 
     },
     {
-        "productId": 16,
+        "productId": 20,
         "productName": "Scarab",
         "productCode": "SCB-0099",
         "releaseDate": "September 11, 2015",
@@ -288,7 +360,7 @@
         "surface": 33905.3243 
     },
     {
-        "productId": 17,
+        "productId": 21,
         "productName": "Sweet Tooth",
         "productCode": "SWT-0045",
         "releaseDate": "November 1, 2016",
@@ -306,25 +378,7 @@
         "surface": 0 
     },
     {
-        "productId": 18,
-        "productName": "Venom",
-        "productCode": "VNM-0123",
-        "releaseDate": "August 24, 2015",
-        "description": "Your standard Battle-Car",
-        "price": 1.55,
-        "starRating": 1.7,
-        "imageUrl": "./app/assets/images/Venom.jpg",
-        "imageUrl1": "./app/assets/images/Venom1.jpg",
-        "noBoost": 2.353571,
-        "boost": 2.061695,
-        "total": 4.415266,
-        "length": 127.6995,
-        "width": 81.88242,
-        "height": 31.80000,
-        "surface": 33282.2864
-    },
-    {
-        "productId": 19,
+        "productId": 22,
         "productName": "Takumi",
         "productCode": "TKMI-3456",
         "releaseDate": "January 1, 2016",
@@ -342,7 +396,25 @@
         "surface": 32659.1218
     },
     {
-        "productId": 20,
+        "productId": 23,
+        "productName": "Venom",
+        "productCode": "VNM-0123",
+        "releaseDate": "August 24, 2015",
+        "description": "Your standard Battle-Car",
+        "price": 1.55,
+        "starRating": 1.7,
+        "imageUrl": "./app/assets/images/Venom.jpg",
+        "imageUrl1": "./app/assets/images/Venom1.jpg",
+        "noBoost": 2.353571,
+        "boost": 2.061695,
+        "total": 4.415266,
+        "length": 127.6995,
+        "width": 81.88242,
+        "height": 31.80000,
+        "surface": 33282.2864
+    },
+    {
+        "productId": 24,
         "productName": "X Devil",
         "productCode": "XDVL-666",
         "releaseDate": "June 6, 2016",
@@ -360,7 +432,7 @@
         "surface": 34654.6063 
     },
     {
-        "productId": 21,
+        "productId": 25,
         "productName": "Zippy",
         "productCode": "ZPY-1234",
         "releaseDate": "September 17, 2016",

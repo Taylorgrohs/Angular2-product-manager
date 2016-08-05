@@ -10,10 +10,10 @@ export class TurnSpeedFilterPipe implements PipeTransform {
     //     if (typeof args[0] === "undefined") {
     //         return array;
     //     
-    transform(array: IProduct[], args: boolean[]): IProduct[] {
+    transform(array: IProduct[], args: number): IProduct[] {
         var array1 = array;
         var array2 = array;
-        if(args[0] === false) {
+        if(args[0] === 2) {
          array.sort((a,b) => {
             if (a.total < b.total) {
                 return 1
@@ -25,8 +25,8 @@ export class TurnSpeedFilterPipe implements PipeTransform {
 
         });
         return array;
-    } else {
-        array2.sort((a,b) => {
+    } else if (args[0] === 1) {
+        array.sort((a,b) => {
             if (a.total < b.total) {
                 return -1
             } else if (a.total > b.total) {
@@ -36,7 +36,9 @@ export class TurnSpeedFilterPipe implements PipeTransform {
             }
 
         });
-        return array2;
+        return array;
+        } else  {
+            return array
         }
     }
 }
