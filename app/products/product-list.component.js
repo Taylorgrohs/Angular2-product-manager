@@ -36,7 +36,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     this.pageTitle = 'Product List';
                     this.imageWidth = 150;
                     this.imageMargin = 2;
-                    this.showImage = false;
+                    this.showImage = true;
                 }
                 ProductListComponent.prototype.toggleImage = function () {
                     this.showImage = !this.showImage;
