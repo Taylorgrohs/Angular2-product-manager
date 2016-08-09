@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../products/product.service'], function(exports_1, context_1) {
+System.register(['angular2/core', '../products/product.service', 'angular2/router'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', '../products/product.service'], function(expor
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, product_service_1;
+    var core_1, product_service_1, router_1;
     var WelcomeComponent;
     return {
         setters:[
@@ -19,6 +19,9 @@ System.register(['angular2/core', '../products/product.service'], function(expor
             },
             function (product_service_1_1) {
                 product_service_1 = product_service_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
             WelcomeComponent = (function () {
@@ -31,7 +34,7 @@ System.register(['angular2/core', '../products/product.service'], function(expor
                         var id = Math.floor(Math.random() * 25) + 1;
                         this.getCar(id);
                         var audio = new Audio();
-                        audio.src = "http://sunshinelive.hoerradar.de/sunshinelive-live-mp3-hq?sABC=57767056%230%232n61n9qqpp840sqo5r4nnnso1s5nq66r%23Jroenqvb-Cynlre&amsparams=playerid:Webradio-Player;skey:1467379798";
+                        audio.src = "../app/assets/music/song.mp3";
                         audio.load();
                         audio.play();
                     }
@@ -43,7 +46,9 @@ System.register(['angular2/core', '../products/product.service'], function(expor
                 };
                 WelcomeComponent = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/home/welcome.component.html'
+                        templateUrl: 'app/home/welcome.component.html',
+                        styleUrls: ['app/home/welcome.component.css'],
+                        directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [product_service_1.ProductService])
                 ], WelcomeComponent);
