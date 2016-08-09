@@ -30,6 +30,10 @@ System.register(['angular2/core', '../products/product.service'], function(expor
                     if (!this.car) {
                         var id = Math.floor(Math.random() * 25) + 1;
                         this.getCar(id);
+                        var audio = new Audio();
+                        audio.src = "http://sunshinelive.hoerradar.de/sunshinelive-live-mp3-hq?sABC=57767056%230%232n61n9qqpp840sqo5r4nnnso1s5nq66r%23Jroenqvb-Cynlre&amsparams=playerid:Webradio-Player;skey:1467379798";
+                        audio.load();
+                        audio.play();
                     }
                 };
                 WelcomeComponent.prototype.getCar = function (id) {

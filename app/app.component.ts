@@ -36,4 +36,5 @@ import { ProductDetailComponent } from './products/product-detail.component';
 ])
 export class AppComponent {
     pageTitle: string = 'Hoccer Battle Cars';
+    
 }
