@@ -1,0 +1,76 @@
+<div class='panel panel-primary' *ngIf='product1'>
+    <div class='panel-heading' style='font-size:large'>
+        {{pageTitle + ': ' + product1.productName + " vs " + product1.productName }}
+    </div>
+
+    <div class='panel-body'>
+        <div class='row'>
+            
+            <div class='col-md-6'>
+                <div class=''>
+                <img class='center-block img-responsive'
+                     [style.width.px]='300'
+                     [style.margin.px]='2'
+                     [src]='product1.imageUrl'
+                     [title]='product1.product1Name'>
+                </div>
+                <br>
+                <div class='row'>
+                    <div class='col-md-3'>Name:</div>
+                    <div class='col-md-3 car-name'>{{product1.productName}}</div>
+                </div>
+                <br>
+                <div class='row'>
+                    <div class='col-md-3'>Turn Speed:</div>
+                    <div class='col-md-6'>No Boost: {{product1.noBoost}} 
+                        <br>Boost: {{product1.boost}} 
+                        <br>Total: {{product1.noBoost + product1.boost}} </div>
+                </div>
+                <br>
+                 <div class='row'>
+                    <div class='col-md-3'>Hit Box:</div>
+                    <div class='col-md-6'>Length: {{product1.length}} 
+                        <br>Width: {{product1.width}}
+                        <br>Height: {{product1.height}} 
+                        <br>Surface Area: {{product1.surface | number:'1.2-2'}}</div>
+                </div>
+                <br>
+            </div>
+            <div class='col-md-6' *ngIf='product2'>
+                <div class=''>
+                <img class='center-block img-responsive'
+                     [style.width.px]='300'
+                     [style.margin.px]='2'
+                     [src]='product2.imageUrl'
+                     [title]='product1.product1Name'>
+                </div>
+                <br>
+                <div class='row'>
+                    <div class='col-md-3'>Name:</div>
+                    <div class='col-md-3 car-name'>{{product2.productName}}</div>
+                </div>
+                <br>
+                <div class='row'>
+                    <div class='col-md-3'>Turn Speed:</div>
+                    <div class='col-md-6'>No Boost: {{product2.noBoost}} 
+                        <br>Boost: {{product2.boost}} 
+                        <br>Total: {{product2.noBoost + product2.boost}} </div>
+                </div>
+                <br>
+                 <div class='row'>
+                    <div class='col-md-3'>Hit Box:</div>
+                    <div class='col-md-6'>Length: {{product2.length}} 
+                        <br>Width: {{product2.width}}
+                        <br>Height: {{product2.height}} 
+                        <br>Surface Area: {{product2.surface | number:'1.2-2'}}</div>
+                </div>
+                <br>
+            </div>      
+        </div>
+    </div>
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>

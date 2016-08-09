@@ -7,6 +7,7 @@ import { SurfaceAreaFilterPipe } from './surfacearea-filter.pipe';
 import { NameFilterPipe } from './name-filter.pipe';
 import { StarComponent } from '../shared/star.component';
 import { ProductService } from './product.service';
+import { CarCompareComponent } from './compare-car.component';
 @Component({
     templateUrl: 'app/products/product-list.component.html',
     styleUrls: ['app/products/product-list.component.css'],
@@ -22,6 +23,8 @@ export class ProductListComponent implements OnInit{
     speedFilter: number = 0;
     areaFilter: number = 0;
     abcFilter: number = 1;
+    firstCarPick: number = 0;
+    secondCarPick: number = 0;
 
     errorMessage: string;
     products: IProduct[];
@@ -56,8 +59,14 @@ export class ProductListComponent implements OnInit{
             this.speedFilter = 1;
         } 
     }    
-
-
+    firstCarSelected(value: number) {
+        this.firstCarPick = value;
+        console.log(value);
+    }
+    secondCarSelected(value2: number) {
+        this.secondCarPick = value2;
+        console.log(value2);
+    }
     toggleImage(): void {
         this.showImage = !this.showImage;
     }

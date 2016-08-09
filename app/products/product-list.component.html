@@ -9,6 +9,16 @@
                 <input type="text"
                     [(ngModel)]='listFilter' />
             </div>
+            <select (change)="firstCarSelected($event.target.value)">
+                <option value="0">Pick a car</option>
+                <option *ngFor='#product of products' value={{product.productId}}>{{product.productName}}</option>  
+            </select> - 
+            <select (change)="secondCarSelected($event.target.value)">
+                <option value="0">Pick a car</option>
+                <option *ngFor='#product of products' value={{product.productId}}>{{product.productName}}</option>  
+            </select>
+            &nbsp;&nbsp;
+            <button class="btn btn-primary" [routerLink]="['CarCompare', {id1: firstCarPick, id2: secondCarPick}]">Compare</button>
         </div>
         <div class="row">
             <div class="col-md-6">

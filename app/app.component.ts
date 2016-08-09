@@ -3,6 +3,7 @@ import { HTTP_PROVIDERS } from 'angular2/http';
 import 'rxjs/Rx'; //Load all features
 import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 import { ProductListComponent } from './products/product-list.component';
+import { CarCompareComponent } from './products/compare-car.component';
 import { ProductService } from './products/product.service';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailComponent } from './products/product-detail.component';
@@ -30,7 +31,8 @@ import { ProductDetailComponent } from './products/product-detail.component';
 @RouteConfig([
     { path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true },
     { path: '/products', name: 'Products', component: ProductListComponent },
-    { path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent }
+    { path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent },
+    { path: '/compare/:id1/:id2', name:'CarCompare', component: CarCompareComponent }
 ])
 export class AppComponent {
     pageTitle: string = 'Hoccer Battle Cars';

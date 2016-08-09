@@ -11,13 +11,17 @@ export class ProductService {
     getProducts(): Observable<IProduct[]> {
         return this._http.get(this._productUrl)
                 .map((response: Response) => <IProduct[]>response.json())
-                .do(data => console.log("All: " + JSON.stringify(data)))
                 .catch(this.handleError);
     }
 
     getProduct(id: number): Observable<IProduct> {
         return this.getProducts()
             .map((products: IProduct[]) => products.find(p => p.productId === id));
+    }
+
+    getCompare(id1: number, id2: number): Observable<IProduct> {
+        return this.getProducts()
+            .map((products: IProduct[]) => products.find(p => p.productId === id1));
     }
 
     private handleError(error: Response) {

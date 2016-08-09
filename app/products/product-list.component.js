@@ -49,6 +49,8 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     this.speedFilter = 0;
                     this.areaFilter = 0;
                     this.abcFilter = 1;
+                    this.firstCarPick = 0;
+                    this.secondCarPick = 0;
                     this.toggle = true; // start with true == shortDate
                 }
                 ProductListComponent.prototype.nameFilter = function () {
@@ -80,6 +82,14 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     else {
                         this.speedFilter = 1;
                     }
+                };
+                ProductListComponent.prototype.firstCarSelected = function (value) {
+                    this.firstCarPick = value;
+                    console.log(value);
+                };
+                ProductListComponent.prototype.secondCarSelected = function (value2) {
+                    this.secondCarPick = value2;
+                    console.log(value2);
                 };
                 ProductListComponent.prototype.toggleImage = function () {
                     this.showImage = !this.showImage;

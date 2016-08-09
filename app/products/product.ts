@@ -31,7 +31,7 @@ export class Product implements IProduct {
                 public imageUrl1: string,
                 public noBoost: number,
                 public boost: number,
-                public total: number;
+                public total: number,
                 public length: number,
                 public width: number,
                 public height: number,
