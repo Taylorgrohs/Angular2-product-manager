@@ -43,11 +43,34 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router',
             AppComponent = (function () {
                 function AppComponent() {
                     this.pageTitle = 'Hoccer Battle Cars';
+                    this.song = false;
+                    this.playButton = true;
+                    this.audio = new Audio();
                 }
+                AppComponent.prototype.playSong = function () {
+                    if (this.song === false) {
+                        this.audio.src = "../app/assets/music/song.mp3";
+                        this.audio.load();
+                        this.audio.play();
+                        this.song = !this.song;
+                        this.toggleButton();
+                    }
+                    else if (this.song === true && this.playButton === false) {
+                        this.audio.pause();
+                        this.toggleButton();
+                    }
+                    else if (this.song === true && this.playButton === true) {
+                        this.audio.play();
+                        this.toggleButton();
+                    }
+                };
+                AppComponent.prototype.toggleButton = function () {
+                    this.playButton = !this.playButton;
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'pm-app',
-                        template: "\n    <div>\n        <nav class='navbar navbar-default'>\n            <div class='container-fluid'>\n                <a class='navbar-brand'>{{pageTitle}}</a>\n                <ul class='nav navbar-nav'>\n                    <li><a [routerLink]=\"['Welcome']\">Home</a></li>\n                    <li><a [routerLink]=\"['Products']\">Car List</a></li>\n                </ul>\n            </div>\n        </nav>\n        <div class='container'>\n            <router-outlet></router-outlet>\n        </div>\n    </div>\n    ",
+                        template: "\n    <div>\n        <nav class='navbar navbar-default'>\n            <div class='container-fluid'>\n                <a class='navbar-brand'>{{pageTitle}}</a>\n                <ul class='nav navbar-nav'>\n                    <li><a [routerLink]=\"['Welcome']\">Home</a></li>\n                    <li><a [routerLink]=\"['Products']\">Car List</a></li>\n                </ul>\n                <button class=\"btn btn-primary play\" (click)='playSong()'><span class=\"glyphicon glyphicon-play-circle\" aria-hidden=\"true\" *ngIf='playButton'></span><span class=\"glyphicon glyphicon-pause\" aria-hidden=\"true\" *ngIf='!playButton'></span> {{playButton ? 'Play' : 'Pause'}} Song</button>\n            </div>\n        </nav>\n        <div class='container'>\n            <router-outlet></router-outlet>\n        </div>\n    </div>\n    ",
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [product_service_1.ProductService, http_1.HTTP_PROVIDERS, router_1.ROUTER_PROVIDERS]
                     }),

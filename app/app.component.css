@@ -11,3 +11,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.play {
+  margin-top: 7px;
+  margin-left: 50px;
+}

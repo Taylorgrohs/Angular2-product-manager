@@ -33,10 +33,6 @@ System.register(['angular2/core', '../products/product.service', 'angular2/route
                     if (!this.car) {
                         var id = Math.floor(Math.random() * 25) + 1;
                         this.getCar(id);
-                        var audio = new Audio();
-                        audio.src = "../app/assets/music/song.mp3";
-                        audio.load();
-                        audio.play();
                     }
                 };
                 WelcomeComponent.prototype.getCar = function (id) {

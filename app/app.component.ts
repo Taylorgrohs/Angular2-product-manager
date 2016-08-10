@@ -18,6 +18,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
                     <li><a [routerLink]="['Welcome']">Home</a></li>
                     <li><a [routerLink]="['Products']">Car List</a></li>
                 </ul>
+                <button class="btn btn-primary play" (click)='playSong()'><span class="glyphicon glyphicon-play-circle" aria-hidden="true" *ngIf='playButton'></span><span class="glyphicon glyphicon-pause" aria-hidden="true" *ngIf='!playButton'></span> {{playButton ? 'Play' : 'Pause'}} Song</button>
             </div>
         </nav>
         <div class='container'>
@@ -36,5 +37,28 @@ import { ProductDetailComponent } from './products/product-detail.component';
 ])
 export class AppComponent {
     pageTitle: string = 'Hoccer Battle Cars';
-    
+    song: boolean = false;
+    playButton: boolean = true;
+    audio = new Audio();
+    playSong() {
+    if(this.song === false) {
+        this.audio.src = "../app/assets/music/song.mp3";
+        this.audio.load();
+        this.audio.play();
+        this.song = !this.song;
+        this.toggleButton();
+        } else if(this.song === true && this.playButton === false) {
+            this.audio.pause();
+            this.toggleButton();
+        } else if (this.song === true && this.playButton === true) {
+            this.audio.play();
+            this.toggleButton();
+        }
+    }
+    toggleButton(): void {
+        this.playButton = !this.playButton;
+        
+    }
+
 }
+
