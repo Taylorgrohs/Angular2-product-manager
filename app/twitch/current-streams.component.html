@@ -1,0 +1,33 @@
+<div class='panel panel-primary' *ngIf='streams'>
+    <div class='panel-heading' style='font-size:large'>
+        {{pageTitle}}
+    </div>
+
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-6 square' *ngFor='#stream of streams.streams'>
+                <div class="preview">
+                        <a href={{stream.channel.url}} target="_blank"><img class='center-block img-responsive' src={{stream.preview.medium}}></a>
+                </div>
+                <div class="title">
+                    <h4><a href={{stream.channel.url}} target="_blank">{{stream.channel.status}}</a></h4>
+                </div>
+                <div class="user-viewer">
+                    <div class="user">
+                        {{stream.channel.name}} 
+                        <span class="viewers">
+                            Viewers: {{stream.viewers}}
+                        </span>
+                    </div>
+                </div>
+                
+                <br>
+            </div>  
+        </div>
+    </div>
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>

@@ -5,8 +5,10 @@ import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/route
 import { ProductListComponent } from './products/product-list.component';
 import { CarCompareComponent } from './products/compare-car.component';
 import { ProductService } from './products/product.service';
+import { StreamService } from './twitch/stream.service';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailComponent } from './products/product-detail.component';
+import { CurrentStreamsComponent } from './twitch/current-streams.component';
 @Component({
     selector: 'pm-app',
     template: `
@@ -17,6 +19,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
                 <ul class='nav navbar-nav'>
                     <li><a [routerLink]="['Welcome']">Home</a></li>
                     <li><a [routerLink]="['Products']">Car List</a></li>
+                    <li><a [routerLink]="['Streams']">Streams</a></li>
                 </ul>
                 <button class="btn btn-primary play" (click)='playSong()'><span class="glyphicon glyphicon-play-circle" aria-hidden="true" *ngIf='playButton'></span><span class="glyphicon glyphicon-pause" aria-hidden="true" *ngIf='!playButton'></span> {{playButton ? 'Play' : 'Pause'}} Song</button>
             </div>
@@ -27,13 +30,14 @@ import { ProductDetailComponent } from './products/product-detail.component';
     </div>
     `,
     directives: [ROUTER_DIRECTIVES],
-    providers: [ProductService, HTTP_PROVIDERS, ROUTER_PROVIDERS]
+    providers: [ProductService, StreamService, HTTP_PROVIDERS, ROUTER_PROVIDERS]
 })
 @RouteConfig([
     { path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true },
     { path: '/products', name: 'Products', component: ProductListComponent },
     { path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent },
-    { path: '/compare/:id1/:id2', name:'CarCompare', component: CarCompareComponent }
+    { path: '/compare/:id1/:id2', name:'CarCompare', component: CarCompareComponent },
+    { path: '/streams', name: 'Streams', component: CurrentStreamsComponent }
 ])
 export class AppComponent {
     pageTitle: string = 'Hoccer Battle Cars';
