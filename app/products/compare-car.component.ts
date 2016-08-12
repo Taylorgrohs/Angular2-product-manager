@@ -13,6 +13,8 @@ export class CarCompareComponent implements OnInit {
     pageTitle: string = "Car Compare";
     product1: IProduct;
     product2: IProduct;
+    name1: string;
+    name2: string;
     errorMessage: string;
     
     constructor(private _routeParams: RouteParams,

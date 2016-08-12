@@ -5,3 +5,11 @@ th.speedFilter:hover, th.surfaceFilter:hover, th.nameFilter:hover {
     font-size: 20px;
     cursor: pointer;
 }
+
+table {
+    width: 70%;
+}
+.button {
+    display: block;
+    margin: auto;
+}

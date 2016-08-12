@@ -11,11 +11,11 @@
             </div>
             <select (change)="firstCarSelected($event.target.value)">
                 <option value="0">Pick a car</option>
-                <option *ngFor='#product of products' value={{product.productId}}>{{product.productName}}</option>  
+                <option *ngFor='#product of products' value={{product.carId}}>{{product.carName}}</option>  
             </select> - 
             <select (change)="secondCarSelected($event.target.value)">
                 <option value="0">Pick a car</option>
-                <option *ngFor='#product of products' value={{product.productId}}>{{product.productName}}</option>  
+                <option *ngFor='#product of products' value={{product.carId}}>{{product.carName}}</option>  
             </select>
             &nbsp;&nbsp;
             <button class="btn btn-primary" [routerLink]="['CarCompare', {id1: firstCarPick, id2: secondCarPick}]">Compare</button>
@@ -25,13 +25,13 @@
                 <h3>Filtered by: {{listFilter}} </h3>
             </div>
         </div>
-        <div class="table-responsive">
+        <div class="table">
             <table class="table"
             *ngIf='products && products.length'>
                 <thead>
                     <tr>
-                        <th>
-                            <button class="btn btn-primary"
+                        <th class="imagebutton">
+                            <button class="btn btn-primary button"
                             (click)='toggleImage()'>
                                 {{showImage ? 'Hide' : 'Show'}} Image
                             </button>
@@ -39,29 +39,19 @@
                         <th class="nameFilter" (click)='nameFilter()'>Battle Car</th>
                         <th class="speedFilter" (click)='turnFilter()'>Turn Speed</th>
                         <th class="surfaceFilter" (click)='surfaceFilter()'>Hit Box</th>
-                        <th>Code</th>
-                        <th>Available</th>
-                        <th>Price</th>
-                        <th>5 Star Rating</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor='#product of products | productFilter:listFilter | turnFilter:speedFilter | surfaceFilter:areaFilter | nameFilter:abcFilter'>
                         <td>
-                            <img *ngIf='showImage'
+                            <img *ngIf='showImage' class='center-block image'
                                 [src]='product.imageUrl1'
                                 [title]='product.productName'
-                                [style.width.px]='imageWidth'
-                                [style.margin.px]='imageMargin'>
+                                [style.width.px]='imageWidth'>
                         </td>
-                        <td><a [routerLink]="['ProductDetail', {id: product.productId}]">{{ product.productName }}</a></td>
+                        <td><a [routerLink]="['ProductDetail', {id: product.carId}]">{{ product.carName }}</a></td>
                         <td>{{product.total}}</td>
                         <td>{{product.surface | number:'1.2-2'}}</td>
-                        <td>{{ product.productCode | lowercase}}</td>
-                        <td>{{ product.releaseDate }}</td>
-                        <td>{{ product.price | currency:'USD':true:'1.2-2'}}</td>
-                        <td><ai-star [rating]='product.starRating'
-                                    (ratingClicked)='onRatingClicked($event)'></ai-star></td>
                     </tr>
                 </tbody>
             </table>

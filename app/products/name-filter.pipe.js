@@ -24,10 +24,10 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                 NameFilterPipe.prototype.transform = function (array, args) {
                     if (args[0] === 2) {
                         array.sort(function (a, b) {
-                            if (a.productId < b.productId) {
+                            if (a.carId < b.carId) {
                                 return 1;
                             }
-                            else if (a.productId > b.productId) {
+                            else if (a.carId > b.carId) {
                                 return -1;
                             }
                             else {
@@ -38,10 +38,10 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     }
                     else if (args[0] === 1) {
                         array.sort(function (a, b) {
-                            if (a.productId < b.productId) {
+                            if (a.carId < b.carId) {
                                 return -1;
                             }
-                            else if (a.productId > b.productId) {
+                            else if (a.carId > b.carId) {
                                 return 1;
                             }
                             else {

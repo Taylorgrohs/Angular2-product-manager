@@ -15,7 +15,7 @@ import { CarCompareComponent } from './compare-car.component';
     directives: [StarComponent, ROUTER_DIRECTIVES]
 })
 export class ProductListComponent implements OnInit{
-    pageTitle: string = 'Product List';
+    pageTitle: string = 'Car List';
     imageWidth: number = 150;
     imageMargin: number = 2;
     showImage: boolean = true;
@@ -75,6 +75,7 @@ export class ProductListComponent implements OnInit{
             .subscribe(
                 products => this.products = products,
                 error => this.errorMessage = <any>error);
+                console.log(this.products);
 
     }
     onRatingClicked(message: string): void {

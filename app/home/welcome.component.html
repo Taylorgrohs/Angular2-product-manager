@@ -20,8 +20,8 @@
                    <img class='img-responsive center-block car-image'
                      [style.width.px]='300'
                      [src]='car.imageUrl'
-                     [title]='car.productName'
-                     style="max-height:300px;padding-bottom:25px;padding-top:25px;margin-right:auto;margin-left:auto" *ngIf='car' [routerLink]="['ProductDetail', {id: car.productId}]">
+                     [title]='car.carName'
+                     style="max-height:300px;padding-bottom:25px;padding-top:25px;margin-right:auto;margin-left:auto" *ngIf='car' [routerLink]="['ProductDetail', {id: car.carId}]">
                </div>
         </div>
     </div>

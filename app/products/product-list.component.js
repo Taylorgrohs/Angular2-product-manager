@@ -42,7 +42,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
             ProductListComponent = (function () {
                 function ProductListComponent(_productService) {
                     this._productService = _productService;
-                    this.pageTitle = 'Product List';
+                    this.pageTitle = 'Car List';
                     this.imageWidth = 150;
                     this.imageMargin = 2;
                     this.showImage = true;
@@ -98,6 +98,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                     var _this = this;
                     this._productService.getProducts()
                         .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
+                    console.log(this.products);
                 };
                 ProductListComponent.prototype.onRatingClicked = function (message) {
                     this.pageTitle = 'Product List: ' + message;

@@ -6,14 +6,10 @@ System.register([], function(exports_1, context_1) {
         setters:[],
         execute: function() {
             Product = (function () {
-                function Product(productId, productName, productCode, releaseDate, price, description, starRating, imageUrl, imageUrl1, noBoost, boost, total, length, width, height, surface) {
-                    this.productId = productId;
-                    this.productName = productName;
-                    this.productCode = productCode;
-                    this.releaseDate = releaseDate;
-                    this.price = price;
+                function Product(carId, carName, description, imageUrl, imageUrl1, noBoost, boost, total, length, width, height, surface) {
+                    this.carId = carId;
+                    this.carName = carName;
                     this.description = description;
-                    this.starRating = starRating;
                     this.imageUrl = imageUrl;
                     this.imageUrl1 = imageUrl1;
                     this.noBoost = noBoost;
@@ -24,9 +20,6 @@ System.register([], function(exports_1, context_1) {
                     this.height = height;
                     this.surface = surface;
                 }
-                Product.prototype.calculateDiscount = function (percent) {
-                    return this.price - (this.price * percent / 100);
-                };
                 return Product;
             }());
             exports_1("Product", Product);

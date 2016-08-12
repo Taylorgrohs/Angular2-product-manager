@@ -27,7 +27,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable'], function(
             ProductService = (function () {
                 function ProductService(_http) {
                     this._http = _http;
-                    this._productUrl = 'api/products/products.json';
+                    this._productUrl = 'http://localhost:60577/api/values';
                 }
                 ProductService.prototype.getProducts = function () {
                     return this._http.get(this._productUrl)
@@ -36,11 +36,11 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable'], function(
                 };
                 ProductService.prototype.getProduct = function (id) {
                     return this.getProducts()
-                        .map(function (products) { return products.find(function (p) { return p.productId === id; }); });
+                        .map(function (products) { return products.find(function (p) { return p.carId === id; }); });
                 };
                 ProductService.prototype.getCompare = function (id1, id2) {
                     return this.getProducts()
-                        .map(function (products) { return products.find(function (p) { return p.productId === id1; }); });
+                        .map(function (products) { return products.find(function (p) { return p.carId === id1; }); });
                 };
                 ProductService.prototype.handleError = function (error) {
                     console.error(error);

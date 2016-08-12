@@ -1,6 +1,6 @@
 <div class='panel panel-primary' *ngIf='product1'>
     <div class='panel-heading' style='font-size:large'>
-        {{pageTitle + ': ' + product1.productName + " vs " + product1.productName }}
+        {{pageTitle + ': ' + name1 + " vs " + name2 }}
     </div>
 
     <div class='panel-body'>
@@ -12,12 +12,12 @@
                      [style.width.px]='300'
                      [style.margin.px]='2'
                      [src]='product1.imageUrl'
-                     [title]='product1.product1Name'>
+                     [title]='product1.carName'>
                 </div>
                 <br>
                 <div class='row'>
                     <div class='col-md-3'>Name:</div>
-                    <div class='col-md-3 car-name'>{{product1.productName}}</div>
+                    <div class='col-md-3 car-name'>{{product1.carName}}</div>
                 </div>
                 <br>
                 <div class='row'>
@@ -42,12 +42,12 @@
                      [style.width.px]='300'
                      [style.margin.px]='2'
                      [src]='product2.imageUrl'
-                     [title]='product1.product1Name'>
+                     [title]='product1.carName'>
                 </div>
                 <br>
                 <div class='row'>
                     <div class='col-md-3'>Name:</div>
-                    <div class='col-md-3 car-name'>{{product2.productName}}</div>
+                    <div class='col-md-3 car-name'>{{product2.carName}}</div>
                 </div>
                 <br>
                 <div class='row'>
