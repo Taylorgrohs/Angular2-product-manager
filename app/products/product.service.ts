@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class ProductService {
-    private _productUrl = 'http://localhost:60577/api/values';
+    private _productUrl = 'http://73.37.26.28/RocketLeagueAPI/api/values';
     constructor(private _http: Http) { }
 
     getProducts(): Observable<IProduct[]> {

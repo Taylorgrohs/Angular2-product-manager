@@ -27,7 +27,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable'], function(
             ProductService = (function () {
                 function ProductService(_http) {
                     this._http = _http;
-                    this._productUrl = 'http://localhost:60577/api/values';
+                    this._productUrl = 'http://73.37.26.28/RocketLeagueAPI/api/values';
                 }
                 ProductService.prototype.getProducts = function () {
                     return this._http.get(this._productUrl)
